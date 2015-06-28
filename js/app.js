@@ -1,4 +1,4 @@
-var app = angular.module('tableApp', ['times.tabletop']);
+var app = angular.module('tableApp', ['times.tabletop'], ['leaflet-directive']);
 
 app.config(function(TabletopProvider){
   TabletopProvider.setTabletopOptions({
@@ -25,10 +25,15 @@ app.controller("tableCtrl", ['$scope', '$http', 'Tabletop', function ($scope, $h
         //       console.log(data);
         // });
         Tabletop.then(function(tabletopData) {
-               $scope.data = tabletopData[0]; 
+               $scope.data = tabletopData[0];
               //  console.log(tabletopData);
         });
 
+        $scope.loadMap = function(long, lat){
+            $scope.long = long;
+            $scope.lat = lat;
+
+        };
 
 
 }]);
