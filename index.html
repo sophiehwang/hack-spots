@@ -29,12 +29,12 @@
             </ul>
         </div>
         <div class="container">
-            <div id="rightSide">
-                <div id="latestSpot"></div>
-                <div id="selectedSpot"></div>
-            </div>
-            <div id="map"></div>
-        </div>
+             <div id="rightSide">
+                 <div id="latestSpot"></div>
+                 <div id="selectedSpot"></div>
+             </div>
+             <div id="map"></div>
+         </div>
         <div class="container">
             <input id="tableFilter" type="text" placeholder="filter by.."></input>
             <span class="clear button">Clear</span> <span class="resetMap button">Reset Map</span>
@@ -45,21 +45,14 @@
 
     </div><!-- end wrapper -->
 
-<div ng-app="tableApp">
-  <div ng-controller="tableCtrl">
-    <!-- <div ng-init="init()">test</div> -->
-    <!-- {{data}} -->
 
-    {{spots}}
-  </div>
-</div>
 
 
     <script id="hackSpotsTable" type="text/html">
         <table>
-            <tr><th class="tHeader">Name</th><th class="tHeader">Address</th><th class="tHeader">City</th><th class="tHeader">State</th><th class="tHeader">Country</th><th class="">Elsewhere</th></tr>
+            <tr><th class="tHeader">Name</th><th class="tHeader">Address</th><th class="tHeader">hour</th><th class="">Elsewhere</th></tr>
             {{#rows}}
-                <tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{address}}</td><td>{{city}}</td><td>{{state}}</td><td>{{country}}</td><td><a class="button" href="https://maps.google.com/maps?q={{address}},{{city}},{{state}}" target="_blank">G Map</a> <a class="button" href="http://www.yelp.com/search?find_desc={{name}}&find_loc={{city}},{{state}}" target="_blank">Yelp</a></td></tr>
+                <tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{address}}</td><td>{{hour}}</td><td><a class="button" href="https://maps.google.com/maps?q={{address}},{{city}},{{state}}" target="_blank">G Map</a> </td></tr>
             {{/rows}}
         </table>
     </script>
