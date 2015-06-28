@@ -3,3 +3,7 @@ server.js
 test.js
 package.json
 .DS_Store
+
+data/output.json
+
+js/popos.json
