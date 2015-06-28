@@ -5,5 +5,4 @@ Based on the source from [SF Open Data](https://data.sfgov.org/Geographic-Locati
 Data on  [Google Spreadsheet](https://docs.google.com/spreadsheets/d/13G0e47dV4AVriU7vS0FTyAlljPUH01m8ethS8TmYdHo/pubhtml?gid=0&single=true).
 
 
-
-[sheetsee.js](http://www.github.com/jlord/sheetsee.js). 
+Powered by [sheetsee.js](http://www.github.com/jlord/sheetsee.js). 
